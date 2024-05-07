@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>10 - Escreva um programa em JavaScript que exiba na tela a média dos
+        elementos de uma matriz.</h3>
+    <center>
+        <form id="meuFormulario">
+            <label for="Numero1">média da matriz:<br>
+                [2, 4, 8]<br>
+                [2, 3, 2]<br>
+                [6, 7, 5]<br></label>
+
+              </label>
+            <button type="submit">Calcular</button>
+        </form>
+    </center>
+
+
+    <script>
+
+        const matriz1 = [[2, 4, 8],
+                        [2, 3, 2],
+                        [6, 7, 5]];
+
+
+        const formulario = document.getElementById('meuFormulario');
+
+        formulario.addEventListener('submit', function (evento) {
+            evento.preventDefault(); // impede o envio do formulário
+
+            alert("A média do conteudo da matriz é: \n" +  (resultado));
+        });
+    </script>
+</body>
+
+</html>
+
